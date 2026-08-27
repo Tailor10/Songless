@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Hallod?</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <main class="game">
+
+        <header>
+
+            <h1>🎵 Hallod?</h1>
+
+            <p>
+                Hallgasd meg a zenét és találd ki!
+            </p>
+
+        </header>
+
+
+        <!-- STATISZTIKÁK -->
+
+        <section class="stats">
+
+            <div class="stat">
+
+                <span>Pontszám</span>
+
+                <strong id="score">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat">
+
+                <span>Sorozat</span>
+
+                <strong id="streak">
+                    0 🔥
+                </strong>
+
+            </div>
+
+
+            <div class="stat">
+
+                <span>Kör</span>
+
+                <strong id="round">
+                    1
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEJÁTSZÓ -->
+
+        <section class="player">
+
+            <button
+                id="playButton"
+                class="play-button"
+                disabled>
+
+                ▶
+
+            </button>
+
+
+            <div class="time-display">
+
+                <span id="currentTime">
+                    0.0
+                </span>
+
+                <span class="time-separator">
+                    /
+                </span>
+
+                <span id="listenTime">
+                    0.5
+                </span>
+
+                <span class="time-unit">
+                    mp
+                </span>
+
+            </div>
+
+
+            <div class="progress">
+
+                <div
+                    id="progressBar"
+                    class="progress-bar">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- KERESŐ -->
+
+        <section class="search-container">
+
+            <input
+                id="guessInput"
+                type="text"
+                placeholder="Írd be az előadót vagy a dal címét..."
+                autocomplete="off">
+
+
+            <div
+                id="results"
+                class="results">
+
+            </div>
+
+        </section>
+
+
+        <!-- ALSÓ GOMBOK -->
+
+        <section class="buttons">
+
+            <button
+                id="giveUpButton"
+                class="secondary danger">
+
+                Feladom
+
+            </button>
+
+
+            <button
+                id="moreButton"
+                class="secondary">
+
+                Többet hallgatok
+
+            </button>
+
+        </section>
+
+
+        <!-- ÜZENET -->
+
+        <div
+            id="message"
+            class="message">
+
+            Zene betöltése...
+
+        </div>
+
+
+        <!-- KÖVETKEZŐ DAL -->
+
+        <button
+            id="nextButton"
+            class="next-button hidden">
+
+            Következő dal →
+
+        </button>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
