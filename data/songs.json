@@ -184,10 +184,7 @@
   { "id": 167, "artist": "Analog Balaton", "title": "Éjfél" },
   { "id": 168, "artist": "Analog Balaton", "title": "Hajnali" },
   { "id": 169, "artist": "Analog Balaton", "title": "Valami" },
-  { "id": 170, "artist": "Analog Balaton", "title": "Vissza" }
-]
-
-,
+  { "id": 170, "artist": "Analog Balaton", "title": "Vissza" },
 {
   "id": 221,
   "artist": "Neoton Família",
@@ -390,4 +387,5 @@
   "id": 260,
   "artist": "Tankcsapda",
   "title": "Adjon az ég"
-}
+},
+]
