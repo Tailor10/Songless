@@ -186,3 +186,208 @@
   { "id": 169, "artist": "Analog Balaton", "title": "Valami" },
   { "id": 170, "artist": "Analog Balaton", "title": "Vissza" }
 ]
+
+,
+{
+  "id": 221,
+  "artist": "Neoton Família",
+  "title": "Holnap hajnalig"
+},
+{
+  "id": 222,
+  "artist": "Neoton Família",
+  "title": "Santa Maria"
+},
+{
+  "id": 223,
+  "artist": "Neoton Família",
+  "title": "Don Quijote"
+},
+{
+  "id": 224,
+  "artist": "Neoton Família",
+  "title": "220 felett"
+},
+{
+  "id": 225,
+  "artist": "Neoton Família",
+  "title": "Kétszázhúsz felett"
+},
+{
+  "id": 226,
+  "artist": "Neoton Família",
+  "title": "A család"
+},
+{
+  "id": 227,
+  "artist": "Neoton Família",
+  "title": "Ha szombat este táncol"
+},
+{
+  "id": 228,
+  "artist": "Neoton Família",
+  "title": "I Love You"
+},
+{
+  "id": 229,
+  "artist": "Neoton Família",
+  "title": "Pago Pago"
+},
+{
+  "id": 230,
+  "artist": "Neoton Família",
+  "title": "Medveczky"
+},
+
+{
+  "id": 231,
+  "artist": "Omega",
+  "title": "Gyöngyhajú lány"
+},
+{
+  "id": 232,
+  "artist": "Omega",
+  "title": "Petróleumlámpa"
+},
+{
+  "id": 233,
+  "artist": "Omega",
+  "title": "Régi csibészek"
+},
+{
+  "id": 234,
+  "artist": "Omega",
+  "title": "Ezüst eső"
+},
+{
+  "id": 235,
+  "artist": "Omega",
+  "title": "Tízezer lépés"
+},
+{
+  "id": 236,
+  "artist": "Omega",
+  "title": "Ha én szél lehetnék"
+},
+{
+  "id": 237,
+  "artist": "Omega",
+  "title": "Léna"
+},
+{
+  "id": 238,
+  "artist": "Omega",
+  "title": "Nem tudom a neved"
+},
+{
+  "id": 239,
+  "artist": "Omega",
+  "title": "Ballada a fegyverkovács fiáról"
+},
+{
+  "id": 240,
+  "artist": "Omega",
+  "title": "Gammapolis"
+},
+
+{
+  "id": 241,
+  "artist": "Republic",
+  "title": "67-es út"
+},
+{
+  "id": 242,
+  "artist": "Republic",
+  "title": "Szeretni valakit valamiért"
+},
+{
+  "id": 243,
+  "artist": "Republic",
+  "title": "Ha itt lennél velem"
+},
+{
+  "id": 244,
+  "artist": "Republic",
+  "title": "Engedj közelebb"
+},
+{
+  "id": 245,
+  "artist": "Republic",
+  "title": "Adj erőt és adj időt"
+},
+{
+  "id": 246,
+  "artist": "Republic",
+  "title": "Aki melletted él"
+},
+{
+  "id": 247,
+  "artist": "Republic",
+  "title": "Repül a bálna"
+},
+{
+  "id": 248,
+  "artist": "Republic",
+  "title": "Szállj el kismadár"
+},
+{
+  "id": 249,
+  "artist": "Republic",
+  "title": "Kék és narancssárga"
+},
+{
+  "id": 250,
+  "artist": "Republic",
+  "title": "Jó reggelt kívánok"
+},
+
+{
+  "id": 251,
+  "artist": "Tankcsapda",
+  "title": "Mennyország tourist"
+},
+{
+  "id": 252,
+  "artist": "Tankcsapda",
+  "title": "Be vagyok rúgva"
+},
+{
+  "id": 253,
+  "artist": "Tankcsapda",
+  "title": "Legjobb méreg"
+},
+{
+  "id": 254,
+  "artist": "Tankcsapda",
+  "title": "A legjobb méreg"
+},
+{
+  "id": 255,
+  "artist": "Tankcsapda",
+  "title": "Ez az a ház"
+},
+{
+  "id": 256,
+  "artist": "Tankcsapda",
+  "title": "Rock a nevem"
+},
+{
+  "id": 257,
+  "artist": "Tankcsapda",
+  "title": "Jönnek a férgek"
+},
+{
+  "id": 258,
+  "artist": "Tankcsapda",
+  "title": "Ülj le mellém"
+},
+{
+  "id": 259,
+  "artist": "Tankcsapda",
+  "title": "Nem hagylak el"
+},
+{
+  "id": 260,
+  "artist": "Tankcsapda",
+  "title": "Adjon az ég"
+}
