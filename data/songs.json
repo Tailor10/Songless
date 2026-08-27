@@ -844,16 +844,16 @@
     "artist": "Analog Balaton",
     "title": "Valami"
   },
-  {
-    "id": 170,
-    "artist": "Analog Balaton",
-    "title": "Vissza"
-  },
-  {
-    "id": 221,
-    "artist": "Neoton Família",
-    "title": "Holnap hajnalig"
-  },
+{
+  "id": 170,
+  "artist": "Analog Balaton",
+  "title": "Vissza"
+},
+{
+  "id": 221,
+  "artist": "Neoton Família",
+  "title": "Holnap hajnalig"
+}
   {
     "id": 222,
     "artist": "Neoton Família",
