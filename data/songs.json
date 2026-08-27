@@ -1,391 +1,1052 @@
 [
-  { "id": 1, "artist": "Azahriah", "title": "Mind1" },
-  { "id": 2, "artist": "Azahriah", "title": "RÚT" },
-  { "id": 3, "artist": "Azahriah", "title": "Introvertált dal" },
-  { "id": 4, "artist": "Azahriah", "title": "Cipoe" },
-  { "id": 5, "artist": "Azahriah", "title": "Four Moods" },
-  { "id": 6, "artist": "Azahriah", "title": "FIGYELJ" },
-  { "id": 7, "artist": "Azahriah", "title": "3korty" },
-  { "id": 8, "artist": "Azahriah", "title": "okari" },
-  { "id": 9, "artist": "Azahriah", "title": "Gát" },
-  { "id": 10, "artist": "Azahriah", "title": "Casa De Papel" },
-
-  { "id": 11, "artist": "DESH", "title": "Talpra cigányok" },
-  { "id": 12, "artist": "DESH", "title": "Kukásautó" },
-  { "id": 13, "artist": "DESH", "title": "Bakker" },
-  { "id": 14, "artist": "DESH", "title": "Rollin" },
-  { "id": 15, "artist": "DESH", "title": "Piros" },
-  { "id": 16, "artist": "DESH", "title": "Talán" },
-  { "id": 17, "artist": "DESH", "title": "Bendegúz" },
-  { "id": 18, "artist": "DESH", "title": "Gyere velem" },
-  { "id": 19, "artist": "DESH", "title": "MÁK" },
-  { "id": 20, "artist": "DESH", "title": "Rosszfiú" },
-
-  { "id": 21, "artist": "Dzsúdló", "title": "Spanom" },
-  { "id": 22, "artist": "Dzsúdló", "title": "Lej" },
-  { "id": 23, "artist": "Dzsúdló", "title": "Sötét" },
-  { "id": 24, "artist": "Dzsúdló", "title": "Függő" },
-  { "id": 25, "artist": "Dzsúdló", "title": "Lélek" },
-  { "id": 26, "artist": "Dzsúdló", "title": "Hajnal" },
-  { "id": 27, "artist": "Dzsúdló", "title": "Nincs vége" },
-  { "id": 28, "artist": "Dzsúdló", "title": "Várnék" },
-  { "id": 29, "artist": "Dzsúdló", "title": "Körforgás" },
-  { "id": 30, "artist": "Dzsúdló", "title": "Kettek" },
-
-  { "id": 31, "artist": "Krúbi", "title": "Nehézlábérzés" },
-  { "id": 32, "artist": "Krúbi", "title": "Szív" },
-  { "id": 33, "artist": "Krúbi", "title": "Pesti est" },
-  { "id": 34, "artist": "Krúbi", "title": "Orbán, verd ki a Ferinek" },
-  { "id": 35, "artist": "Krúbi", "title": "Szív" },
-  { "id": 36, "artist": "Krúbi", "title": "Föld" },
-  { "id": 37, "artist": "Krúbi", "title": "Levegő" },
-  { "id": 38, "artist": "Krúbi", "title": "Ösztönlény" },
-  { "id": 39, "artist": "Krúbi", "title": "Különös" },
-  { "id": 40, "artist": "Krúbi", "title": "Puszi" },
-
-  { "id": 41, "artist": "Beton.Hofi", "title": "Bagira" },
-  { "id": 42, "artist": "Beton.Hofi", "title": "Kint vagyok" },
-  { "id": 43, "artist": "Beton.Hofi", "title": "Playbánia" },
-  { "id": 44, "artist": "Beton.Hofi", "title": "PONT JÓ" },
-  { "id": 45, "artist": "Beton.Hofi", "title": "Be vagyok zárva" },
-  { "id": 46, "artist": "Beton.Hofi", "title": "Szív" },
-  { "id": 47, "artist": "Beton.Hofi", "title": "Dohánybolt" },
-  { "id": 48, "artist": "Beton.Hofi", "title": "Kukac" },
-  { "id": 49, "artist": "Beton.Hofi", "title": "Nincs több" },
-  { "id": 50, "artist": "Beton.Hofi", "title": "Óceán" },
-
-  { "id": 51, "artist": "Majka", "title": "Mindenki táncol" },
-  { "id": 52, "artist": "Majka", "title": "Belehalok" },
-  { "id": 53, "artist": "Majka", "title": "Füttyös" },
-  { "id": 54, "artist": "Majka", "title": "Elég leszek" },
-  { "id": 55, "artist": "Majka", "title": "Azt beszélik a városban" },
-  { "id": 56, "artist": "Majka", "title": "Mindenki másképp csinálja" },
-  { "id": 57, "artist": "Majka", "title": "Szép lányok" },
-  { "id": 58, "artist": "Majka", "title": "Nekem ez jár" },
-  { "id": 59, "artist": "Majka", "title": "Még egy kör" },
-  { "id": 60, "artist": "Majka", "title": "A család" },
-
-  { "id": 61, "artist": "ByeAlex és a Slepp", "title": "Fekete" },
-  { "id": 62, "artist": "ByeAlex és a Slepp", "title": "Még mindig..." },
-  { "id": 63, "artist": "ByeAlex és a Slepp", "title": "Hullik" },
-  { "id": 64, "artist": "ByeAlex és a Slepp", "title": "Részeg" },
-  { "id": 65, "artist": "ByeAlex és a Slepp", "title": "Kedvesem" },
-  { "id": 66, "artist": "ByeAlex és a Slepp", "title": "Rosszul vagyok" },
-  { "id": 67, "artist": "ByeAlex és a Slepp", "title": "Volt már jobb" },
-  { "id": 68, "artist": "ByeAlex és a Slepp", "title": "Bocsánat" },
-  { "id": 69, "artist": "ByeAlex és a Slepp", "title": "Hajnali kettő" },
-  { "id": 70, "artist": "ByeAlex és a Slepp", "title": "Rózsaszín" },
-
-  { "id": 71, "artist": "Follow The Flow", "title": "Nem tudja senki" },
-  { "id": 72, "artist": "Follow The Flow", "title": "Anyám mondta" },
-  { "id": 73, "artist": "Follow The Flow", "title": "Maradok távol" },
-  { "id": 74, "artist": "Follow The Flow", "title": "Nem vagyok egyedül" },
-  { "id": 75, "artist": "Follow The Flow", "title": "Világom" },
-  { "id": 76, "artist": "Follow The Flow", "title": "Hajnalig" },
-  { "id": 77, "artist": "Follow The Flow", "title": "Tavasz" },
-  { "id": 78, "artist": "Follow The Flow", "title": "Rossz idő" },
-  { "id": 79, "artist": "Follow The Flow", "title": "Szabadon" },
-  { "id": 80, "artist": "Follow The Flow", "title": "Úgy fáj" },
-
-  { "id": 81, "artist": "Carson Coma", "title": "Feldobom a követ" },
-  { "id": 82, "artist": "Carson Coma", "title": "Pók" },
-  { "id": 83, "artist": "Carson Coma", "title": "Én még sosem" },
-  { "id": 84, "artist": "Carson Coma", "title": "Kölyök" },
-  { "id": 85, "artist": "Carson Coma", "title": "Immunissá válunk" },
-  { "id": 86, "artist": "Carson Coma", "title": "Hobbihajótörött" },
-  { "id": 87, "artist": "Carson Coma", "title": "Purgatórium" },
-  { "id": 88, "artist": "Carson Coma", "title": "Kedvesem" },
-  { "id": 89, "artist": "Carson Coma", "title": "Huszadik század" },
-  { "id": 90, "artist": "Carson Coma", "title": "Napfény" },
-
-  { "id": 91, "artist": "Wellhello", "title": "Rakpart" },
-  { "id": 92, "artist": "Wellhello", "title": "Apuveddmeg" },
-  { "id": 93, "artist": "Wellhello", "title": "Elnöki ügy" },
-  { "id": 94, "artist": "Wellhello", "title": "Odaút" },
-  { "id": 95, "artist": "Wellhello", "title": "Barátom" },
-  { "id": 96, "artist": "Wellhello", "title": "Nem olyan lány" },
-  { "id": 97, "artist": "Wellhello", "title": "Szia Uram" },
-  { "id": 98, "artist": "Wellhello", "title": "Két szó" },
-  { "id": 99, "artist": "Wellhello", "title": "Még egy perc" },
-  { "id": 100, "artist": "Wellhello", "title": "Túl szép" },
-
-  { "id": 101, "artist": "Halott Pénz", "title": "Darabokra törted a szívem" },
-  { "id": 102, "artist": "Halott Pénz", "title": "Ugyanúgy hallasz" },
-  { "id": 103, "artist": "Halott Pénz", "title": "Valami van a levegőben" },
-  { "id": 104, "artist": "Halott Pénz", "title": "Szétszeretlek" },
-  { "id": 105, "artist": "Halott Pénz", "title": "Élnünk kellett volna" },
-  { "id": 106, "artist": "Halott Pénz", "title": "Szeretni akartam" },
-  { "id": 107, "artist": "Halott Pénz", "title": "Mindenre képes" },
-  { "id": 108, "artist": "Halott Pénz", "title": "Fogyasszuk el" },
-  { "id": 109, "artist": "Halott Pénz", "title": "Otthon" },
-  { "id": 110, "artist": "Halott Pénz", "title": "Hello lányok" },
-
-  { "id": 111, "artist": "Bagossy Brothers Company", "title": "Olyan ő" },
-  { "id": 112, "artist": "Bagossy Brothers Company", "title": "Visszajövök" },
-  { "id": 113, "artist": "Bagossy Brothers Company", "title": "Vakít a kék" },
-  { "id": 114, "artist": "Bagossy Brothers Company", "title": "Csillag az égen" },
-  { "id": 115, "artist": "Bagossy Brothers Company", "title": "Ha már itt vagy" },
-  { "id": 116, "artist": "Bagossy Brothers Company", "title": "Az a nap" },
-  { "id": 117, "artist": "Bagossy Brothers Company", "title": "Fény" },
-  { "id": 118, "artist": "Bagossy Brothers Company", "title": "Benned" },
-  { "id": 119, "artist": "Bagossy Brothers Company", "title": "Híd" },
-  { "id": 120, "artist": "Bagossy Brothers Company", "title": "Egyedül" },
-
-  { "id": 121, "artist": "ValMar", "title": "Úristen" },
-  { "id": 122, "artist": "ValMar", "title": "Éget a nap" },
-  { "id": 123, "artist": "ValMar", "title": "Szülinap" },
-  { "id": 124, "artist": "ValMar", "title": "Lángol" },
-  { "id": 125, "artist": "ValMar", "title": "Playboy" },
-  { "id": 126, "artist": "ValMar", "title": "Félek" },
-  { "id": 127, "artist": "ValMar", "title": "Túl jó" },
-  { "id": 128, "artist": "ValMar", "title": "Kint vagyok" },
-  { "id": 129, "artist": "ValMar", "title": "Buli" },
-  { "id": 130, "artist": "ValMar", "title": "Éjjel" },
-
-  { "id": 131, "artist": "Manuel", "title": "Messziről jöttem" },
-  { "id": 132, "artist": "Manuel", "title": "Legenda" },
-  { "id": 133, "artist": "Manuel", "title": "Végtelen" },
-  { "id": 134, "artist": "Manuel", "title": "Szívem" },
-  { "id": 135, "artist": "Manuel", "title": "Túl késő" },
-  { "id": 136, "artist": "Manuel", "title": "Éjszaka" },
-  { "id": 137, "artist": "Manuel", "title": "Vihar" },
-  { "id": 138, "artist": "Manuel", "title": "Nem érdekel" },
-  { "id": 139, "artist": "Manuel", "title": "Még mindig" },
-  { "id": 140, "artist": "Manuel", "title": "Újrakezdés" },
-
-  { "id": 141, "artist": "T. Danny", "title": "Megmondtam" },
-  { "id": 142, "artist": "T. Danny", "title": "Yin Yang" },
-  { "id": 143, "artist": "T. Danny", "title": "Visszavágyom" },
-  { "id": 144, "artist": "T. Danny", "title": "Érzem" },
-  { "id": 145, "artist": "T. Danny", "title": "Nem tudom" },
-  { "id": 146, "artist": "T. Danny", "title": "Éjszakák" },
-  { "id": 147, "artist": "T. Danny", "title": "Túl késő" },
-  { "id": 148, "artist": "T. Danny", "title": "Egyedül" },
-  { "id": 149, "artist": "T. Danny", "title": "Szív" },
-  { "id": 150, "artist": "T. Danny", "title": "Holnap" },
-
-  { "id": 151, "artist": "BSW", "title": "Mióta elhagytál" },
-  { "id": 152, "artist": "BSW", "title": "Yaay" },
-  { "id": 153, "artist": "BSW", "title": "Már nem érdekel" },
-  { "id": 154, "artist": "BSW", "title": "Lidokain" },
-  { "id": 155, "artist": "BSW", "title": "Túl sok" },
-  { "id": 156, "artist": "BSW", "title": "Éjjel-nappal" },
-  { "id": 157, "artist": "BSW", "title": "Csak egy lány" },
-  { "id": 158, "artist": "BSW", "title": "Nekem ne" },
-  { "id": 159, "artist": "BSW", "title": "Minden este" },
-  { "id": 160, "artist": "BSW", "title": "Kell még" },
-
-  { "id": 161, "artist": "Analog Balaton", "title": "Rajtam kívül" },
-  { "id": 162, "artist": "Analog Balaton", "title": "Könnyű" },
-  { "id": 163, "artist": "Analog Balaton", "title": "Fent" },
-  { "id": 164, "artist": "Analog Balaton", "title": "Túl késő" },
-  { "id": 165, "artist": "Analog Balaton", "title": "Könnyek" },
-  { "id": 166, "artist": "Analog Balaton", "title": "Egyedül" },
-  { "id": 167, "artist": "Analog Balaton", "title": "Éjfél" },
-  { "id": 168, "artist": "Analog Balaton", "title": "Hajnali" },
-  { "id": 169, "artist": "Analog Balaton", "title": "Valami" },
-  { "id": 170, "artist": "Analog Balaton", "title": "Vissza" },
-{
-  "id": 221,
-  "artist": "Neoton Família",
-  "title": "Holnap hajnalig"
-},
-{
-  "id": 222,
-  "artist": "Neoton Família",
-  "title": "Santa Maria"
-},
-{
-  "id": 223,
-  "artist": "Neoton Família",
-  "title": "Don Quijote"
-},
-{
-  "id": 224,
-  "artist": "Neoton Família",
-  "title": "220 felett"
-},
-{
-  "id": 225,
-  "artist": "Neoton Família",
-  "title": "Kétszázhúsz felett"
-},
-{
-  "id": 226,
-  "artist": "Neoton Família",
-  "title": "A család"
-},
-{
-  "id": 227,
-  "artist": "Neoton Família",
-  "title": "Ha szombat este táncol"
-},
-{
-  "id": 228,
-  "artist": "Neoton Família",
-  "title": "I Love You"
-},
-{
-  "id": 229,
-  "artist": "Neoton Família",
-  "title": "Pago Pago"
-},
-{
-  "id": 230,
-  "artist": "Neoton Família",
-  "title": "Medveczky"
-},
-
-{
-  "id": 231,
-  "artist": "Omega",
-  "title": "Gyöngyhajú lány"
-},
-{
-  "id": 232,
-  "artist": "Omega",
-  "title": "Petróleumlámpa"
-},
-{
-  "id": 233,
-  "artist": "Omega",
-  "title": "Régi csibészek"
-},
-{
-  "id": 234,
-  "artist": "Omega",
-  "title": "Ezüst eső"
-},
-{
-  "id": 235,
-  "artist": "Omega",
-  "title": "Tízezer lépés"
-},
-{
-  "id": 236,
-  "artist": "Omega",
-  "title": "Ha én szél lehetnék"
-},
-{
-  "id": 237,
-  "artist": "Omega",
-  "title": "Léna"
-},
-{
-  "id": 238,
-  "artist": "Omega",
-  "title": "Nem tudom a neved"
-},
-{
-  "id": 239,
-  "artist": "Omega",
-  "title": "Ballada a fegyverkovács fiáról"
-},
-{
-  "id": 240,
-  "artist": "Omega",
-  "title": "Gammapolis"
-},
-
-{
-  "id": 241,
-  "artist": "Republic",
-  "title": "67-es út"
-},
-{
-  "id": 242,
-  "artist": "Republic",
-  "title": "Szeretni valakit valamiért"
-},
-{
-  "id": 243,
-  "artist": "Republic",
-  "title": "Ha itt lennél velem"
-},
-{
-  "id": 244,
-  "artist": "Republic",
-  "title": "Engedj közelebb"
-},
-{
-  "id": 245,
-  "artist": "Republic",
-  "title": "Adj erőt és adj időt"
-},
-{
-  "id": 246,
-  "artist": "Republic",
-  "title": "Aki melletted él"
-},
-{
-  "id": 247,
-  "artist": "Republic",
-  "title": "Repül a bálna"
-},
-{
-  "id": 248,
-  "artist": "Republic",
-  "title": "Szállj el kismadár"
-},
-{
-  "id": 249,
-  "artist": "Republic",
-  "title": "Kék és narancssárga"
-},
-{
-  "id": 250,
-  "artist": "Republic",
-  "title": "Jó reggelt kívánok"
-},
-
-{
-  "id": 251,
-  "artist": "Tankcsapda",
-  "title": "Mennyország tourist"
-},
-{
-  "id": 252,
-  "artist": "Tankcsapda",
-  "title": "Be vagyok rúgva"
-},
-{
-  "id": 253,
-  "artist": "Tankcsapda",
-  "title": "Legjobb méreg"
-},
-{
-  "id": 254,
-  "artist": "Tankcsapda",
-  "title": "A legjobb méreg"
-},
-{
-  "id": 255,
-  "artist": "Tankcsapda",
-  "title": "Ez az a ház"
-},
-{
-  "id": 256,
-  "artist": "Tankcsapda",
-  "title": "Rock a nevem"
-},
-{
-  "id": 257,
-  "artist": "Tankcsapda",
-  "title": "Jönnek a férgek"
-},
-{
-  "id": 258,
-  "artist": "Tankcsapda",
-  "title": "Ülj le mellém"
-},
-{
-  "id": 259,
-  "artist": "Tankcsapda",
-  "title": "Nem hagylak el"
-},
-{
-  "id": 260,
-  "artist": "Tankcsapda",
-  "title": "Adjon az ég"
-},
+  {
+    "id": 1,
+    "artist": "Azahriah",
+    "title": "Mind1"
+  },
+  {
+    "id": 2,
+    "artist": "Azahriah",
+    "title": "RÚT"
+  },
+  {
+    "id": 3,
+    "artist": "Azahriah",
+    "title": "Introvertált dal"
+  },
+  {
+    "id": 4,
+    "artist": "Azahriah",
+    "title": "Cipoe"
+  },
+  {
+    "id": 5,
+    "artist": "Azahriah",
+    "title": "Four Moods"
+  },
+  {
+    "id": 6,
+    "artist": "Azahriah",
+    "title": "FIGYELJ"
+  },
+  {
+    "id": 7,
+    "artist": "Azahriah",
+    "title": "3korty"
+  },
+  {
+    "id": 8,
+    "artist": "Azahriah",
+    "title": "okari"
+  },
+  {
+    "id": 9,
+    "artist": "Azahriah",
+    "title": "Gát"
+  },
+  {
+    "id": 10,
+    "artist": "Azahriah",
+    "title": "Casa De Papel"
+  },
+  {
+    "id": 11,
+    "artist": "DESH",
+    "title": "Talpra cigányok"
+  },
+  {
+    "id": 12,
+    "artist": "DESH",
+    "title": "Kukásautó"
+  },
+  {
+    "id": 13,
+    "artist": "DESH",
+    "title": "Bakker"
+  },
+  {
+    "id": 14,
+    "artist": "DESH",
+    "title": "Rollin"
+  },
+  {
+    "id": 15,
+    "artist": "DESH",
+    "title": "Piros"
+  },
+  {
+    "id": 16,
+    "artist": "DESH",
+    "title": "Talán"
+  },
+  {
+    "id": 17,
+    "artist": "DESH",
+    "title": "Bendegúz"
+  },
+  {
+    "id": 18,
+    "artist": "DESH",
+    "title": "Gyere velem"
+  },
+  {
+    "id": 19,
+    "artist": "DESH",
+    "title": "MÁK"
+  },
+  {
+    "id": 20,
+    "artist": "DESH",
+    "title": "Rosszfiú"
+  },
+  {
+    "id": 21,
+    "artist": "Dzsúdló",
+    "title": "Spanom"
+  },
+  {
+    "id": 22,
+    "artist": "Dzsúdló",
+    "title": "Lej"
+  },
+  {
+    "id": 23,
+    "artist": "Dzsúdló",
+    "title": "Sötét"
+  },
+  {
+    "id": 24,
+    "artist": "Dzsúdló",
+    "title": "Függő"
+  },
+  {
+    "id": 25,
+    "artist": "Dzsúdló",
+    "title": "Lélek"
+  },
+  {
+    "id": 26,
+    "artist": "Dzsúdló",
+    "title": "Hajnal"
+  },
+  {
+    "id": 27,
+    "artist": "Dzsúdló",
+    "title": "Nincs vége"
+  },
+  {
+    "id": 28,
+    "artist": "Dzsúdló",
+    "title": "Várnék"
+  },
+  {
+    "id": 29,
+    "artist": "Dzsúdló",
+    "title": "Körforgás"
+  },
+  {
+    "id": 30,
+    "artist": "Dzsúdló",
+    "title": "Kettek"
+  },
+  {
+    "id": 31,
+    "artist": "Krúbi",
+    "title": "Nehézlábérzés"
+  },
+  {
+    "id": 32,
+    "artist": "Krúbi",
+    "title": "Szív"
+  },
+  {
+    "id": 33,
+    "artist": "Krúbi",
+    "title": "Pesti est"
+  },
+  {
+    "id": 34,
+    "artist": "Krúbi",
+    "title": "Orbán, verd ki a Ferinek"
+  },
+  {
+    "id": 35,
+    "artist": "Krúbi",
+    "title": "Szív"
+  },
+  {
+    "id": 36,
+    "artist": "Krúbi",
+    "title": "Föld"
+  },
+  {
+    "id": 37,
+    "artist": "Krúbi",
+    "title": "Levegő"
+  },
+  {
+    "id": 38,
+    "artist": "Krúbi",
+    "title": "Ösztönlény"
+  },
+  {
+    "id": 39,
+    "artist": "Krúbi",
+    "title": "Különös"
+  },
+  {
+    "id": 40,
+    "artist": "Krúbi",
+    "title": "Puszi"
+  },
+  {
+    "id": 41,
+    "artist": "Beton.Hofi",
+    "title": "Bagira"
+  },
+  {
+    "id": 42,
+    "artist": "Beton.Hofi",
+    "title": "Kint vagyok"
+  },
+  {
+    "id": 43,
+    "artist": "Beton.Hofi",
+    "title": "Playbánia"
+  },
+  {
+    "id": 44,
+    "artist": "Beton.Hofi",
+    "title": "PONT JÓ"
+  },
+  {
+    "id": 45,
+    "artist": "Beton.Hofi",
+    "title": "Be vagyok zárva"
+  },
+  {
+    "id": 46,
+    "artist": "Beton.Hofi",
+    "title": "Szív"
+  },
+  {
+    "id": 47,
+    "artist": "Beton.Hofi",
+    "title": "Dohánybolt"
+  },
+  {
+    "id": 48,
+    "artist": "Beton.Hofi",
+    "title": "Kukac"
+  },
+  {
+    "id": 49,
+    "artist": "Beton.Hofi",
+    "title": "Nincs több"
+  },
+  {
+    "id": 50,
+    "artist": "Beton.Hofi",
+    "title": "Óceán"
+  },
+  {
+    "id": 51,
+    "artist": "Majka",
+    "title": "Mindenki táncol"
+  },
+  {
+    "id": 52,
+    "artist": "Majka",
+    "title": "Belehalok"
+  },
+  {
+    "id": 53,
+    "artist": "Majka",
+    "title": "Füttyös"
+  },
+  {
+    "id": 54,
+    "artist": "Majka",
+    "title": "Elég leszek"
+  },
+  {
+    "id": 55,
+    "artist": "Majka",
+    "title": "Azt beszélik a városban"
+  },
+  {
+    "id": 56,
+    "artist": "Majka",
+    "title": "Mindenki másképp csinálja"
+  },
+  {
+    "id": 57,
+    "artist": "Majka",
+    "title": "Szép lányok"
+  },
+  {
+    "id": 58,
+    "artist": "Majka",
+    "title": "Nekem ez jár"
+  },
+  {
+    "id": 59,
+    "artist": "Majka",
+    "title": "Még egy kör"
+  },
+  {
+    "id": 60,
+    "artist": "Majka",
+    "title": "A család"
+  },
+  {
+    "id": 61,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Fekete"
+  },
+  {
+    "id": 62,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Még mindig..."
+  },
+  {
+    "id": 63,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Hullik"
+  },
+  {
+    "id": 64,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Részeg"
+  },
+  {
+    "id": 65,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Kedvesem"
+  },
+  {
+    "id": 66,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Rosszul vagyok"
+  },
+  {
+    "id": 67,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Volt már jobb"
+  },
+  {
+    "id": 68,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Bocsánat"
+  },
+  {
+    "id": 69,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Hajnali kettő"
+  },
+  {
+    "id": 70,
+    "artist": "ByeAlex és a Slepp",
+    "title": "Rózsaszín"
+  },
+  {
+    "id": 71,
+    "artist": "Follow The Flow",
+    "title": "Nem tudja senki"
+  },
+  {
+    "id": 72,
+    "artist": "Follow The Flow",
+    "title": "Anyám mondta"
+  },
+  {
+    "id": 73,
+    "artist": "Follow The Flow",
+    "title": "Maradok távol"
+  },
+  {
+    "id": 74,
+    "artist": "Follow The Flow",
+    "title": "Nem vagyok egyedül"
+  },
+  {
+    "id": 75,
+    "artist": "Follow The Flow",
+    "title": "Világom"
+  },
+  {
+    "id": 76,
+    "artist": "Follow The Flow",
+    "title": "Hajnalig"
+  },
+  {
+    "id": 77,
+    "artist": "Follow The Flow",
+    "title": "Tavasz"
+  },
+  {
+    "id": 78,
+    "artist": "Follow The Flow",
+    "title": "Rossz idő"
+  },
+  {
+    "id": 79,
+    "artist": "Follow The Flow",
+    "title": "Szabadon"
+  },
+  {
+    "id": 80,
+    "artist": "Follow The Flow",
+    "title": "Úgy fáj"
+  },
+  {
+    "id": 81,
+    "artist": "Carson Coma",
+    "title": "Feldobom a követ"
+  },
+  {
+    "id": 82,
+    "artist": "Carson Coma",
+    "title": "Pók"
+  },
+  {
+    "id": 83,
+    "artist": "Carson Coma",
+    "title": "Én még sosem"
+  },
+  {
+    "id": 84,
+    "artist": "Carson Coma",
+    "title": "Kölyök"
+  },
+  {
+    "id": 85,
+    "artist": "Carson Coma",
+    "title": "Immunissá válunk"
+  },
+  {
+    "id": 86,
+    "artist": "Carson Coma",
+    "title": "Hobbihajótörött"
+  },
+  {
+    "id": 87,
+    "artist": "Carson Coma",
+    "title": "Purgatórium"
+  },
+  {
+    "id": 88,
+    "artist": "Carson Coma",
+    "title": "Kedvesem"
+  },
+  {
+    "id": 89,
+    "artist": "Carson Coma",
+    "title": "Huszadik század"
+  },
+  {
+    "id": 90,
+    "artist": "Carson Coma",
+    "title": "Napfény"
+  },
+  {
+    "id": 91,
+    "artist": "Wellhello",
+    "title": "Rakpart"
+  },
+  {
+    "id": 92,
+    "artist": "Wellhello",
+    "title": "Apuveddmeg"
+  },
+  {
+    "id": 93,
+    "artist": "Wellhello",
+    "title": "Elnöki ügy"
+  },
+  {
+    "id": 94,
+    "artist": "Wellhello",
+    "title": "Odaút"
+  },
+  {
+    "id": 95,
+    "artist": "Wellhello",
+    "title": "Barátom"
+  },
+  {
+    "id": 96,
+    "artist": "Wellhello",
+    "title": "Nem olyan lány"
+  },
+  {
+    "id": 97,
+    "artist": "Wellhello",
+    "title": "Szia Uram"
+  },
+  {
+    "id": 98,
+    "artist": "Wellhello",
+    "title": "Két szó"
+  },
+  {
+    "id": 99,
+    "artist": "Wellhello",
+    "title": "Még egy perc"
+  },
+  {
+    "id": 100,
+    "artist": "Wellhello",
+    "title": "Túl szép"
+  },
+  {
+    "id": 101,
+    "artist": "Halott Pénz",
+    "title": "Darabokra törted a szívem"
+  },
+  {
+    "id": 102,
+    "artist": "Halott Pénz",
+    "title": "Ugyanúgy hallasz"
+  },
+  {
+    "id": 103,
+    "artist": "Halott Pénz",
+    "title": "Valami van a levegőben"
+  },
+  {
+    "id": 104,
+    "artist": "Halott Pénz",
+    "title": "Szétszeretlek"
+  },
+  {
+    "id": 105,
+    "artist": "Halott Pénz",
+    "title": "Élnünk kellett volna"
+  },
+  {
+    "id": 106,
+    "artist": "Halott Pénz",
+    "title": "Szeretni akartam"
+  },
+  {
+    "id": 107,
+    "artist": "Halott Pénz",
+    "title": "Mindenre képes"
+  },
+  {
+    "id": 108,
+    "artist": "Halott Pénz",
+    "title": "Fogyasszuk el"
+  },
+  {
+    "id": 109,
+    "artist": "Halott Pénz",
+    "title": "Otthon"
+  },
+  {
+    "id": 110,
+    "artist": "Halott Pénz",
+    "title": "Hello lányok"
+  },
+  {
+    "id": 111,
+    "artist": "Bagossy Brothers Company",
+    "title": "Olyan ő"
+  },
+  {
+    "id": 112,
+    "artist": "Bagossy Brothers Company",
+    "title": "Visszajövök"
+  },
+  {
+    "id": 113,
+    "artist": "Bagossy Brothers Company",
+    "title": "Vakít a kék"
+  },
+  {
+    "id": 114,
+    "artist": "Bagossy Brothers Company",
+    "title": "Csillag az égen"
+  },
+  {
+    "id": 115,
+    "artist": "Bagossy Brothers Company",
+    "title": "Ha már itt vagy"
+  },
+  {
+    "id": 116,
+    "artist": "Bagossy Brothers Company",
+    "title": "Az a nap"
+  },
+  {
+    "id": 117,
+    "artist": "Bagossy Brothers Company",
+    "title": "Fény"
+  },
+  {
+    "id": 118,
+    "artist": "Bagossy Brothers Company",
+    "title": "Benned"
+  },
+  {
+    "id": 119,
+    "artist": "Bagossy Brothers Company",
+    "title": "Híd"
+  },
+  {
+    "id": 120,
+    "artist": "Bagossy Brothers Company",
+    "title": "Egyedül"
+  },
+  {
+    "id": 121,
+    "artist": "ValMar",
+    "title": "Úristen"
+  },
+  {
+    "id": 122,
+    "artist": "ValMar",
+    "title": "Éget a nap"
+  },
+  {
+    "id": 123,
+    "artist": "ValMar",
+    "title": "Szülinap"
+  },
+  {
+    "id": 124,
+    "artist": "ValMar",
+    "title": "Lángol"
+  },
+  {
+    "id": 125,
+    "artist": "ValMar",
+    "title": "Playboy"
+  },
+  {
+    "id": 126,
+    "artist": "ValMar",
+    "title": "Félek"
+  },
+  {
+    "id": 127,
+    "artist": "ValMar",
+    "title": "Túl jó"
+  },
+  {
+    "id": 128,
+    "artist": "ValMar",
+    "title": "Kint vagyok"
+  },
+  {
+    "id": 129,
+    "artist": "ValMar",
+    "title": "Buli"
+  },
+  {
+    "id": 130,
+    "artist": "ValMar",
+    "title": "Éjjel"
+  },
+  {
+    "id": 131,
+    "artist": "Manuel",
+    "title": "Messziről jöttem"
+  },
+  {
+    "id": 132,
+    "artist": "Manuel",
+    "title": "Legenda"
+  },
+  {
+    "id": 133,
+    "artist": "Manuel",
+    "title": "Végtelen"
+  },
+  {
+    "id": 134,
+    "artist": "Manuel",
+    "title": "Szívem"
+  },
+  {
+    "id": 135,
+    "artist": "Manuel",
+    "title": "Túl késő"
+  },
+  {
+    "id": 136,
+    "artist": "Manuel",
+    "title": "Éjszaka"
+  },
+  {
+    "id": 137,
+    "artist": "Manuel",
+    "title": "Vihar"
+  },
+  {
+    "id": 138,
+    "artist": "Manuel",
+    "title": "Nem érdekel"
+  },
+  {
+    "id": 139,
+    "artist": "Manuel",
+    "title": "Még mindig"
+  },
+  {
+    "id": 140,
+    "artist": "Manuel",
+    "title": "Újrakezdés"
+  },
+  {
+    "id": 141,
+    "artist": "T. Danny",
+    "title": "Megmondtam"
+  },
+  {
+    "id": 142,
+    "artist": "T. Danny",
+    "title": "Yin Yang"
+  },
+  {
+    "id": 143,
+    "artist": "T. Danny",
+    "title": "Visszavágyom"
+  },
+  {
+    "id": 144,
+    "artist": "T. Danny",
+    "title": "Érzem"
+  },
+  {
+    "id": 145,
+    "artist": "T. Danny",
+    "title": "Nem tudom"
+  },
+  {
+    "id": 146,
+    "artist": "T. Danny",
+    "title": "Éjszakák"
+  },
+  {
+    "id": 147,
+    "artist": "T. Danny",
+    "title": "Túl késő"
+  },
+  {
+    "id": 148,
+    "artist": "T. Danny",
+    "title": "Egyedül"
+  },
+  {
+    "id": 149,
+    "artist": "T. Danny",
+    "title": "Szív"
+  },
+  {
+    "id": 150,
+    "artist": "T. Danny",
+    "title": "Holnap"
+  },
+  {
+    "id": 151,
+    "artist": "BSW",
+    "title": "Mióta elhagytál"
+  },
+  {
+    "id": 152,
+    "artist": "BSW",
+    "title": "Yaay"
+  },
+  {
+    "id": 153,
+    "artist": "BSW",
+    "title": "Már nem érdekel"
+  },
+  {
+    "id": 154,
+    "artist": "BSW",
+    "title": "Lidokain"
+  },
+  {
+    "id": 155,
+    "artist": "BSW",
+    "title": "Túl sok"
+  },
+  {
+    "id": 156,
+    "artist": "BSW",
+    "title": "Éjjel-nappal"
+  },
+  {
+    "id": 157,
+    "artist": "BSW",
+    "title": "Csak egy lány"
+  },
+  {
+    "id": 158,
+    "artist": "BSW",
+    "title": "Nekem ne"
+  },
+  {
+    "id": 159,
+    "artist": "BSW",
+    "title": "Minden este"
+  },
+  {
+    "id": 160,
+    "artist": "BSW",
+    "title": "Kell még"
+  },
+  {
+    "id": 161,
+    "artist": "Analog Balaton",
+    "title": "Rajtam kívül"
+  },
+  {
+    "id": 162,
+    "artist": "Analog Balaton",
+    "title": "Könnyű"
+  },
+  {
+    "id": 163,
+    "artist": "Analog Balaton",
+    "title": "Fent"
+  },
+  {
+    "id": 164,
+    "artist": "Analog Balaton",
+    "title": "Túl késő"
+  },
+  {
+    "id": 165,
+    "artist": "Analog Balaton",
+    "title": "Könnyek"
+  },
+  {
+    "id": 166,
+    "artist": "Analog Balaton",
+    "title": "Egyedül"
+  },
+  {
+    "id": 167,
+    "artist": "Analog Balaton",
+    "title": "Éjfél"
+  },
+  {
+    "id": 168,
+    "artist": "Analog Balaton",
+    "title": "Hajnali"
+  },
+  {
+    "id": 169,
+    "artist": "Analog Balaton",
+    "title": "Valami"
+  },
+  {
+    "id": 170,
+    "artist": "Analog Balaton",
+    "title": "Vissza"
+  },
+  {
+    "id": 221,
+    "artist": "Neoton Família",
+    "title": "Holnap hajnalig"
+  },
+  {
+    "id": 222,
+    "artist": "Neoton Família",
+    "title": "Santa Maria"
+  },
+  {
+    "id": 223,
+    "artist": "Neoton Família",
+    "title": "Don Quijote"
+  },
+  {
+    "id": 224,
+    "artist": "Neoton Família",
+    "title": "220 felett"
+  },
+  {
+    "id": 225,
+    "artist": "Neoton Família",
+    "title": "Kétszázhúsz felett"
+  },
+  {
+    "id": 226,
+    "artist": "Neoton Família",
+    "title": "A család"
+  },
+  {
+    "id": 227,
+    "artist": "Neoton Família",
+    "title": "Ha szombat este táncol"
+  },
+  {
+    "id": 228,
+    "artist": "Neoton Família",
+    "title": "I Love You"
+  },
+  {
+    "id": 229,
+    "artist": "Neoton Família",
+    "title": "Pago Pago"
+  },
+  {
+    "id": 230,
+    "artist": "Neoton Família",
+    "title": "Medveczky"
+  },
+  {
+    "id": 231,
+    "artist": "Omega",
+    "title": "Gyöngyhajú lány"
+  },
+  {
+    "id": 232,
+    "artist": "Omega",
+    "title": "Petróleumlámpa"
+  },
+  {
+    "id": 233,
+    "artist": "Omega",
+    "title": "Régi csibészek"
+  },
+  {
+    "id": 234,
+    "artist": "Omega",
+    "title": "Ezüst eső"
+  },
+  {
+    "id": 235,
+    "artist": "Omega",
+    "title": "Tízezer lépés"
+  },
+  {
+    "id": 236,
+    "artist": "Omega",
+    "title": "Ha én szél lehetnék"
+  },
+  {
+    "id": 237,
+    "artist": "Omega",
+    "title": "Léna"
+  },
+  {
+    "id": 238,
+    "artist": "Omega",
+    "title": "Nem tudom a neved"
+  },
+  {
+    "id": 239,
+    "artist": "Omega",
+    "title": "Ballada a fegyverkovács fiáról"
+  },
+  {
+    "id": 240,
+    "artist": "Omega",
+    "title": "Gammapolis"
+  },
+  {
+    "id": 241,
+    "artist": "Republic",
+    "title": "67-es út"
+  },
+  {
+    "id": 242,
+    "artist": "Republic",
+    "title": "Szeretni valakit valamiért"
+  },
+  {
+    "id": 243,
+    "artist": "Republic",
+    "title": "Ha itt lennél velem"
+  },
+  {
+    "id": 244,
+    "artist": "Republic",
+    "title": "Engedj közelebb"
+  },
+  {
+    "id": 245,
+    "artist": "Republic",
+    "title": "Adj erőt és adj időt"
+  },
+  {
+    "id": 246,
+    "artist": "Republic",
+    "title": "Aki melletted él"
+  },
+  {
+    "id": 247,
+    "artist": "Republic",
+    "title": "Repül a bálna"
+  },
+  {
+    "id": 248,
+    "artist": "Republic",
+    "title": "Szállj el kismadár"
+  },
+  {
+    "id": 249,
+    "artist": "Republic",
+    "title": "Kék és narancssárga"
+  },
+  {
+    "id": 250,
+    "artist": "Republic",
+    "title": "Jó reggelt kívánok"
+  },
+  {
+    "id": 251,
+    "artist": "Tankcsapda",
+    "title": "Mennyország tourist"
+  },
+  {
+    "id": 252,
+    "artist": "Tankcsapda",
+    "title": "Be vagyok rúgva"
+  },
+  {
+    "id": 253,
+    "artist": "Tankcsapda",
+    "title": "Legjobb méreg"
+  },
+  {
+    "id": 254,
+    "artist": "Tankcsapda",
+    "title": "A legjobb méreg"
+  },
+  {
+    "id": 255,
+    "artist": "Tankcsapda",
+    "title": "Ez az a ház"
+  },
+  {
+    "id": 256,
+    "artist": "Tankcsapda",
+    "title": "Rock a nevem"
+  },
+  {
+    "id": 257,
+    "artist": "Tankcsapda",
+    "title": "Jönnek a férgek"
+  },
+  {
+    "id": 258,
+    "artist": "Tankcsapda",
+    "title": "Ülj le mellém"
+  },
+  {
+    "id": 259,
+    "artist": "Tankcsapda",
+    "title": "Nem hagylak el"
+  },
+  {
+    "id": 260,
+    "artist": "Tankcsapda",
+    "title": "Adjon az ég"
+  },
 ]
