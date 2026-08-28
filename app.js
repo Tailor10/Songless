@@ -2,6 +2,7 @@ import {
     initializeApp
 } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
 
+
 import {
     getFirestore,
     doc,
@@ -20,13 +21,27 @@ import {
 ========================= */
 
 const firebaseConfig = {
+
     apiKey: "AIzaSyC75fxDCjIYGZxmN2DPWGHnJ1tBwEDxMkA",
-    authDomain: "song-66ea4.firebaseapp.com",
-    projectId: "song-66ea4",
-    storageBucket: "song-66ea4.firebasestorage.app",
-    messagingSenderId: "595642498247",
-    appId: "1:595642498247:web:947f6303fb874f4b6892e2",
-    measurementId: "G-ZGP4RP6PH9"
+
+    authDomain:
+        "song-66ea4.firebaseapp.com",
+
+    projectId:
+        "song-66ea4",
+
+    storageBucket:
+        "song-66ea4.firebasestorage.app",
+
+    messagingSenderId:
+        "595642498247",
+
+    appId:
+        "1:595642498247:web:947f6303fb874f4b6892e2",
+
+    measurementId:
+        "G-ZGP4RP6PH9"
+
 };
 
 
@@ -36,6 +51,7 @@ const firebaseApp =
 
 const db =
     getFirestore(firebaseApp);
+
 
 
 /* =========================
@@ -48,11 +64,15 @@ let currentSong = null;
 
 let audio = null;
 
+
 let score = 0;
 
 let streak = 0;
 
 let round = 1;
+
+
+let selectedCategory = "vegyes";
 
 
 const listenTimes = [
@@ -67,6 +87,7 @@ const listenTimes = [
 
 let listenTimeIndex = 0;
 
+
 let listenTime =
     listenTimes[listenTimeIndex];
 
@@ -80,22 +101,28 @@ let stopTimeout = null;
 let animationFrame = null;
 
 
+
 /* =========================
    JÁTÉKOS
 ========================= */
 
 let playerName =
-    localStorage.getItem("songlessPlayerName") || "";
+    localStorage.getItem(
+        "songlessPlayerName"
+    ) || "";
 
 
 let playerId =
-    localStorage.getItem("songlessPlayerId");
+    localStorage.getItem(
+        "songlessPlayerId"
+    );
 
 
 if (!playerId) {
 
     playerId =
         crypto.randomUUID();
+
 
     localStorage.setItem(
         "songlessPlayerId",
@@ -105,84 +132,217 @@ if (!playerId) {
 }
 
 
+
 /* =========================
    HTML ELEMEK
 ========================= */
 
 const playButton =
-    document.getElementById("playButton");
+    document.getElementById(
+        "playButton"
+    );
 
 
 const guessInput =
-    document.getElementById("guessInput");
+    document.getElementById(
+        "guessInput"
+    );
 
 
 const results =
-    document.getElementById("results");
+    document.getElementById(
+        "results"
+    );
 
 
 const moreButton =
-    document.getElementById("moreButton");
+    document.getElementById(
+        "moreButton"
+    );
 
 
 const giveUpButton =
-    document.getElementById("giveUpButton");
+    document.getElementById(
+        "giveUpButton"
+    );
 
 
 const nextButton =
-    document.getElementById("nextButton");
+    document.getElementById(
+        "nextButton"
+    );
 
 
 const message =
-    document.getElementById("message");
+    document.getElementById(
+        "message"
+    );
 
 
 const listenTimeElement =
-    document.getElementById("listenTime");
+    document.getElementById(
+        "listenTime"
+    );
 
 
 const currentTimeElement =
-    document.getElementById("currentTime");
+    document.getElementById(
+        "currentTime"
+    );
 
 
 const progressBar =
-    document.getElementById("progressBar");
+    document.getElementById(
+        "progressBar"
+    );
 
 
 const scoreElement =
-    document.getElementById("score");
+    document.getElementById(
+        "score"
+    );
 
 
 const streakElement =
-    document.getElementById("streak");
+    document.getElementById(
+        "streak"
+    );
 
 
 const roundElement =
-    document.getElementById("round");
+    document.getElementById(
+        "round"
+    );
 
 
 const leaderboardList =
-    document.getElementById("leaderboardList");
+    document.getElementById(
+        "leaderboardList"
+    );
 
 
 const nameModal =
-    document.getElementById("nameModal");
+    document.getElementById(
+        "nameModal"
+    );
 
 
 const playerNameInput =
-    document.getElementById("playerNameInput");
+    document.getElementById(
+        "playerNameInput"
+    );
 
 
 const startGameButton =
-    document.getElementById("startGameButton");
+    document.getElementById(
+        "startGameButton"
+    );
 
 
 const changeNameButton =
-    document.getElementById("changeNameButton");
+    document.getElementById(
+        "changeNameButton"
+    );
+
+
+const changeCategoryButton =
+    document.getElementById(
+        "changeCategoryButton"
+    );
+
+
+const currentCategoryElement =
+    document.getElementById(
+        "currentCategory"
+    );
+
+
+const gameSubtitle =
+    document.getElementById(
+        "gameSubtitle"
+    );
+
+
+const categoryButtons =
+    document.querySelectorAll(
+        ".category-button"
+    );
+
 
 
 /* =========================
-   NÉV KEZELÉS
+   KATEGÓRIÁK
+========================= */
+
+const categoryNames = {
+
+    magyar:
+        "🇭🇺 Magyar",
+
+    kulfoldi:
+        "🌍 Külföldi",
+
+    vegyes:
+        "🎲 Vegyes"
+
+};
+
+
+const categoryDescriptions = {
+
+    magyar:
+        "Találd ki a magyar dalokat minél kevesebb hallgatásból!",
+
+    kulfoldi:
+        "Találd ki a külföldi dalokat minél kevesebb hallgatásból!",
+
+    vegyes:
+        "Találd ki a dalokat minél kevesebb hallgatásból!"
+
+};
+
+
+
+/* =========================
+   KATEGÓRIA KIVÁLASZTÁSA
+========================= */
+
+categoryButtons.forEach(
+    button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                selectedCategory =
+                    button.dataset.category;
+
+
+                categoryButtons.forEach(
+                    categoryButton => {
+
+                        categoryButton.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =========================
+   NÉV / JÁTÉK INDÍTÁSA
 ========================= */
 
 function showNameModal() {
@@ -196,11 +356,23 @@ function showNameModal() {
     );
 
 
-    setTimeout(() => {
+    setTimeout(
+        () => {
 
-        playerNameInput.focus();
+            playerNameInput.focus();
 
-    }, 100);
+        },
+        100
+    );
+
+}
+
+
+function hideNameModal() {
+
+    nameModal.classList.add(
+        "hidden"
+    );
 
 }
 
@@ -208,7 +380,8 @@ function showNameModal() {
 async function savePlayerName() {
 
     const name =
-        playerNameInput.value.trim();
+        playerNameInput.value
+            .trim();
 
 
     if (
@@ -237,9 +410,16 @@ async function savePlayerName() {
     );
 
 
-    nameModal.classList.add(
-        "hidden"
+    localStorage.setItem(
+        "songlessCategory",
+        selectedCategory
     );
+
+
+    hideNameModal();
+
+
+    updateCategoryDisplay();
 
 
     await saveScore();
@@ -249,39 +429,117 @@ async function savePlayerName() {
         songs.length === 0
     ) {
 
-        loadSongs();
+        await loadSongs();
+
+    }
+    else {
+
+        resetGame();
+
+        await startRound();
 
     }
 
 }
 
 
-startGameButton.addEventListener(
-    "click",
-    savePlayerName
-);
+function openCategorySelection() {
+
+    stopPlayback();
 
 
-playerNameInput.addEventListener(
-    "keydown",
-    event => {
+    playerNameInput.value =
+        playerName;
 
-        if (
-            event.key === "Enter"
-        ) {
 
-            savePlayerName();
+    categoryButtons.forEach(
+        button => {
+
+            button.classList.remove(
+                "active"
+            );
+
+
+            if (
+                button.dataset.category ===
+                selectedCategory
+            ) {
+
+                button.classList.add(
+                    "active"
+                );
+
+            }
 
         }
+    );
+
+
+    showNameModal();
+
+}
+
+
+function resetGame() {
+
+    score = 0;
+
+    streak = 0;
+
+    round = 1;
+
+    currentSong = null;
+
+    gameFinished = false;
+
+
+    updateStats();
+
+}
+
+
+
+/* =========================
+   KATEGÓRIA KIJELZÉSE
+========================= */
+
+function updateCategoryDisplay() {
+
+    currentCategoryElement.textContent =
+        categoryNames[selectedCategory];
+
+
+    gameSubtitle.textContent =
+        categoryDescriptions[selectedCategory];
+
+}
+
+
+
+/* =========================
+   ELÉRHETŐ DALOK
+========================= */
+
+function getAvailableSongs() {
+
+    if (
+        selectedCategory ===
+        "vegyes"
+    ) {
+
+        return songs;
 
     }
-);
 
 
-changeNameButton.addEventListener(
-    "click",
-    showNameModal
-);
+    return songs.filter(
+        song =>
+            song.category ===
+            selectedCategory
+    );
+
+}
+
 
 
 /* =========================
@@ -333,6 +591,7 @@ async function saveScore() {
         await setDoc(
             playerRef,
             {
+
                 name:
                     playerName,
 
@@ -341,9 +600,12 @@ async function saveScore() {
 
                 updatedAt:
                     Date.now()
+
             },
             {
+
                 merge: true
+
             }
         );
 
@@ -360,6 +622,7 @@ async function saveScore() {
 }
 
 
+
 /* =========================
    LEADERBOARD BETÖLTÉSE
 ========================= */
@@ -372,16 +635,20 @@ function loadLeaderboard() {
                 db,
                 "leaderboard"
             ),
+
             orderBy(
                 "score",
                 "desc"
             ),
+
             limit(10)
         );
 
 
     onSnapshot(
+
         leaderboardQuery,
+
         snapshot => {
 
             leaderboardList.innerHTML =
@@ -530,6 +797,7 @@ function loadLeaderboard() {
             );
 
         },
+
         error => {
 
             console.error(
@@ -545,9 +813,11 @@ function loadLeaderboard() {
             `;
 
         }
+
     );
 
 }
+
 
 
 /* =========================
@@ -564,7 +834,9 @@ async function loadSongs() {
             );
 
 
-        if (!response.ok) {
+        if (
+            !response.ok
+        ) {
 
             throw new Error(
                 "Nem sikerült betölteni a daladatbázist."
@@ -589,12 +861,56 @@ async function loadSongs() {
         }
 
 
+        /*
+        Ha a régi magyar dalaidban
+        nincs category mező,
+        automatikusan magyar lesz.
+        */
+
+        songs =
+            songs.map(
+                song => {
+
+                    if (
+                        !song.category
+                    ) {
+
+                        song.category =
+                            "magyar";
+
+                    }
+
+
+                    return song;
+
+                }
+            );
+
+
+        const availableSongs =
+            getAvailableSongs();
+
+
+        if (
+            availableSongs.length === 0
+        ) {
+
+            message.textContent =
+                "❌ Ebben a kategóriában még nincs dal.";
+
+            return;
+
+        }
+
+
         await startRound();
 
     }
     catch (error) {
 
-        console.error(error);
+        console.error(
+            error
+        );
 
 
         message.textContent =
@@ -603,6 +919,7 @@ async function loadSongs() {
     }
 
 }
+
 
 
 /* =========================
@@ -628,7 +945,9 @@ async function loadPreview(song) {
         await fetch(url);
 
 
-    if (!response.ok) {
+    if (
+        !response.ok
+    ) {
 
         throw new Error(
             "Nem sikerült lekérni a zenét."
@@ -643,7 +962,8 @@ async function loadPreview(song) {
 
     const result =
         data.results.find(
-            item => item.previewUrl
+            item =>
+                item.previewUrl
         );
 
 
@@ -661,13 +981,16 @@ async function loadPreview(song) {
 }
 
 
+
 /* =========================
    LEJÁTSZÁS LEÁLLÍTÁSA
 ========================= */
 
 function stopPlayback() {
 
-    if (stopTimeout !== null) {
+    if (
+        stopTimeout !== null
+    ) {
 
         clearTimeout(
             stopTimeout
@@ -679,7 +1002,9 @@ function stopPlayback() {
     }
 
 
-    if (animationFrame !== null) {
+    if (
+        animationFrame !== null
+    ) {
 
         cancelAnimationFrame(
             animationFrame
@@ -700,6 +1025,7 @@ function stopPlayback() {
     }
 
 }
+
 
 
 /* =========================
@@ -723,25 +1049,43 @@ async function startRound() {
         stopPlayback();
 
 
+        const availableSongs =
+            getAvailableSongs();
+
+
+        if (
+            availableSongs.length === 0
+        ) {
+
+            throw new Error(
+                "Nincs dal ebben a kategóriában."
+            );
+
+        }
+
+
         let newSong;
 
 
         do {
 
             newSong =
-                songs[
+                availableSongs[
                     Math.floor(
                         Math.random() *
-                        songs.length
+                        availableSongs.length
                     )
                 ];
 
         }
         while (
 
-            songs.length > 1 &&
+            availableSongs.length > 1 &&
+
             currentSong &&
-            newSong.id === currentSong.id
+
+            newSong.id ===
+            currentSong.id
 
         );
 
@@ -866,6 +1210,7 @@ async function startRound() {
 }
 
 
+
 /* =========================
    LEJÁTSZÁS
 ========================= */
@@ -873,9 +1218,13 @@ async function startRound() {
 function playSong() {
 
     if (
+
         gameFinished ||
+
         !audio ||
+
         isLoading
+
     ) {
 
         return;
@@ -889,60 +1238,69 @@ function playSong() {
 
 
     audio.play()
-        .then(() => {
+        .then(
+            () => {
 
-            function updateTime() {
+                function updateTime() {
 
-                if (!audio) {
+                    if (!audio) {
 
-                    return;
+                        return;
 
-                }
-
-
-                const current =
-                    Math.min(
-                        audio.currentTime,
-                        listenTime
-                    );
+                    }
 
 
-                currentTimeElement.textContent =
-                    current.toFixed(1);
-
-
-                const percentage =
-                    Math.min(
-                        (
-                            current /
+                    const current =
+                        Math.min(
+                            audio.currentTime,
                             listenTime
-                        ) * 100,
-                        100
-                    );
-
-
-                progressBar.style.width =
-                    `${percentage}%`;
-
-
-                if (
-                    current < listenTime &&
-                    !audio.paused
-                ) {
-
-                    animationFrame =
-                        requestAnimationFrame(
-                            updateTime
                         );
 
+
+                    currentTimeElement.textContent =
+                        current.toFixed(1);
+
+
+                    const percentage =
+                        Math.min(
+
+                            (
+                                current /
+                                listenTime
+                            ) * 100,
+
+                            100
+
+                        );
+
+
+                    progressBar.style.width =
+                        `${percentage}%`;
+
+
+                    if (
+
+                        current <
+                        listenTime &&
+
+                        !audio.paused
+
+                    ) {
+
+                        animationFrame =
+                            requestAnimationFrame(
+                                updateTime
+                            );
+
+                    }
+
                 }
 
+
+                updateTime();
+
             }
-
-
-            updateTime();
-
-        })
+        )
         .catch(
             error => {
 
@@ -957,6 +1315,7 @@ function playSong() {
 
     stopTimeout =
         setTimeout(
+
             () => {
 
                 if (!audio) {
@@ -977,10 +1336,13 @@ function playSong() {
                     "100%";
 
             },
+
             listenTime * 1000
+
         );
 
 }
+
 
 
 /* =========================
@@ -1008,8 +1370,17 @@ function showResults(queryText) {
     }
 
 
+    /*
+    Csak az aktuális kategória
+    dalai között keres.
+    */
+
+    const availableSongs =
+        getAvailableSongs();
+
+
     const matches =
-        songs
+        availableSongs
             .filter(
                 song => {
 
@@ -1024,7 +1395,10 @@ function showResults(queryText) {
 
                 }
             )
-            .slice(0, 6);
+            .slice(
+                0,
+                6
+            );
 
 
     matches.forEach(
@@ -1078,7 +1452,9 @@ function showResults(queryText) {
                 "click",
                 () => {
 
-                    selectSong(song);
+                    selectSong(
+                        song
+                    );
 
                 }
             );
@@ -1094,13 +1470,16 @@ function showResults(queryText) {
 }
 
 
+
 /* =========================
    DAL KIVÁLASZTÁSA
 ========================= */
 
 function selectSong(selectedSong) {
 
-    if (gameFinished) {
+    if (
+        gameFinished
+    ) {
 
         return;
 
@@ -1116,8 +1495,10 @@ function selectSong(selectedSong) {
 
 
     if (
+
         selectedSong.id ===
         currentSong.id
+
     ) {
 
         correctAnswer();
@@ -1130,6 +1511,7 @@ function selectSong(selectedSong) {
     }
 
 }
+
 
 
 /* =========================
@@ -1145,12 +1527,14 @@ async function correctAnswer() {
 
 
     const pointsTable = [
+
         100,
         80,
         60,
         40,
         20,
         10
+
     ];
 
 
@@ -1171,17 +1555,25 @@ async function correctAnswer() {
         <div class="answer-result">
 
             <div class="answer-status">
+
                 🎉 Helyes válasz!
+
             </div>
 
+
             <div class="answer-song">
+
                 ${currentSong.artist}
                 –
                 ${currentSong.title}
+
             </div>
 
+
             <div class="answer-points">
+
                 +${points} pont
+
             </div>
 
         </div>
@@ -1206,6 +1598,7 @@ async function correctAnswer() {
 }
 
 
+
 /* =========================
    ROSSZ VÁLASZ
 ========================= */
@@ -1216,11 +1609,13 @@ function wrongAnswer() {
 
 
     message.innerHTML = `
+
         ❌ Nem ez volt!
 
         <br>
 
         Próbálj több időt hallgatni.
+
     `;
 
 
@@ -1233,6 +1628,7 @@ function wrongAnswer() {
 }
 
 
+
 /* =========================
    TÖBBET HALLGATOK
 ========================= */
@@ -1240,8 +1636,11 @@ function wrongAnswer() {
 function increaseListenTime() {
 
     if (
+
         gameFinished ||
+
         isLoading
+
     ) {
 
         return;
@@ -1253,8 +1652,10 @@ function increaseListenTime() {
 
 
     if (
+
         listenTimeIndex <
         listenTimes.length - 1
+
     ) {
 
         listenTimeIndex++;
@@ -1272,15 +1673,19 @@ function increaseListenTime() {
 
 
         message.innerHTML = `
+
             🎧 Most már
             <strong>${listenTime} mp-et</strong>
             hallgathatsz.
+
         `;
 
 
         if (
+
             listenTimeIndex ===
             listenTimes.length - 1
+
         ) {
 
             moreButton.disabled =
@@ -1293,13 +1698,16 @@ function increaseListenTime() {
 }
 
 
+
 /* =========================
    FELADOM
 ========================= */
 
 function giveUp() {
 
-    if (gameFinished) {
+    if (
+        gameFinished
+    ) {
 
         return;
 
@@ -1320,13 +1728,18 @@ function giveUp() {
         <div class="answer-result">
 
             <div class="answer-status">
+
                 😢 A helyes válasz:
+
             </div>
 
+
             <div class="answer-song">
+
                 ${currentSong.artist}
                 –
                 ${currentSong.title}
+
             </div>
 
         </div>
@@ -1346,6 +1759,7 @@ function giveUp() {
     updateStats();
 
 }
+
 
 
 /* =========================
@@ -1388,9 +1802,44 @@ function updateStats() {
 }
 
 
+
 /* =========================
    ESEMÉNYEK
 ========================= */
+
+startGameButton.addEventListener(
+    "click",
+    savePlayerName
+);
+
+
+playerNameInput.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Enter"
+        ) {
+
+            savePlayerName();
+
+        }
+
+    }
+);
+
+
+changeNameButton.addEventListener(
+    "click",
+    openCategorySelection
+);
+
+
+changeCategoryButton.addEventListener(
+    "click",
+    openCategorySelection
+);
+
 
 playButton.addEventListener(
     "click",
@@ -1426,7 +1875,9 @@ nextButton.addEventListener(
     "click",
     async () => {
 
-        if (isLoading) {
+        if (
+            isLoading
+        ) {
 
             return;
 
@@ -1467,7 +1918,9 @@ guessInput.addEventListener(
                 );
 
 
-            if (firstResult) {
+            if (
+                firstResult
+            ) {
 
                 firstResult.click();
 
@@ -1484,9 +1937,11 @@ document.addEventListener(
     event => {
 
         if (
+
             !event.target.closest(
                 ".search-container"
             )
+
         ) {
 
             results.innerHTML =
@@ -1498,6 +1953,7 @@ document.addEventListener(
 );
 
 
+
 /* =========================
    INDÍTÁS
 ========================= */
@@ -1505,18 +1961,60 @@ document.addEventListener(
 loadLeaderboard();
 
 
-if (playerName) {
-
-    nameModal.classList.add(
-        "hidden"
+const savedCategory =
+    localStorage.getItem(
+        "songlessCategory"
     );
 
 
-    loadSongs();
+if (
+
+    savedCategory === "magyar" ||
+
+    savedCategory === "kulfoldi" ||
+
+    savedCategory === "vegyes"
+
+) {
+
+    selectedCategory =
+        savedCategory;
 
 }
-else {
 
-    showNameModal();
 
-}
+updateCategoryDisplay();
+
+
+categoryButtons.forEach(
+    button => {
+
+        button.classList.remove(
+            "active"
+        );
+
+
+        if (
+
+            button.dataset.category ===
+            selectedCategory
+
+        ) {
+
+            button.classList.add(
+                "active"
+            );
+
+        }
+
+    }
+);
+
+
+/*
+Mindig megjelenik az indító ablak,
+hogy a játékos eldönthesse,
+milyen kategóriát szeretne.
+*/
+
+showNameModal();
