@@ -19,7 +19,8 @@
 
 <body>
 
-    <!-- NÉV MEGADÁSA -->
+
+    <!-- JÁTÉK INDÍTÁSA -->
 
     <div id="nameModal" class="modal">
 
@@ -28,8 +29,10 @@
             <h2>🎵 Üdv a Hallod?-ban!</h2>
 
             <p>
-                Add meg a neved, ami a ranglistán meg fog jelenni.
+                Add meg a neved, majd válaszd ki,
+                milyen zenéket szeretnél kitalálni.
             </p>
+
 
             <input
                 id="playerNameInput"
@@ -38,8 +41,65 @@
                 placeholder="Például: Ádám"
                 autocomplete="off">
 
+
+            <h3 class="category-title">
+                Milyen zenéket szeretnél?
+            </h3>
+
+
+            <div class="category-buttons">
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="magyar">
+
+                    <span class="category-icon">🇭🇺</span>
+
+                    <span>
+                        <strong>Magyar</strong>
+                        <small>Magyar előadók és dalok</small>
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="kulfoldi">
+
+                    <span class="category-icon">🌍</span>
+
+                    <span>
+                        <strong>Külföldi</strong>
+                        <small>Nemzetközi előadók és dalok</small>
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="category-button active"
+                    data-category="vegyes">
+
+                    <span class="category-icon">🎲</span>
+
+                    <span>
+                        <strong>Vegyes</strong>
+                        <small>Magyar és külföldi zenék</small>
+                    </span>
+
+                </button>
+
+            </div>
+
+
             <button id="startGameButton">
+
                 Játék indítása ▶
+
             </button>
 
         </div>
@@ -47,19 +107,46 @@
     </div>
 
 
+
     <!-- FŐ JÁTÉK -->
 
     <main class="game">
+
 
         <header>
 
             <h1>🎵 Hallod?</h1>
 
-            <p>
-                Találd ki a magyar dalt minél kevesebb hallgatásból!
+            <p id="gameSubtitle">
+
+                Találd ki a dalt minél kevesebb hallgatásból!
+
             </p>
 
         </header>
+
+
+
+        <!-- KATEGÓRIA -->
+
+        <div class="current-category">
+
+            <span>Játékmód:</span>
+
+            <strong id="currentCategory">
+                🎲 Vegyes
+            </strong>
+
+            <button
+                id="changeCategoryButton"
+                type="button">
+
+                Módosítás
+
+            </button>
+
+        </div>
+
 
 
         <!-- STATISZTIKÁK -->
@@ -101,6 +188,7 @@
         </section>
 
 
+
         <!-- LEADERBOARD -->
 
         <section class="leaderboard">
@@ -125,12 +213,15 @@
                 class="leaderboard-list">
 
                 <div class="leaderboard-loading">
+
                     Ranglista betöltése...
+
                 </div>
 
             </div>
 
         </section>
+
 
 
         <!-- LEJÁTSZÓ -->
@@ -181,6 +272,7 @@
         </section>
 
 
+
         <!-- KERESŐ -->
 
         <section class="search-container">
@@ -198,6 +290,7 @@
             </div>
 
         </section>
+
 
 
         <!-- GOMBOK -->
@@ -224,15 +317,17 @@
         </section>
 
 
+
         <!-- ÜZENET -->
 
         <div
             id="message"
             class="message">
 
-            Add meg a neved a játék indításához!
+            Válaszd ki a játékmódot!
 
         </div>
+
 
 
         <!-- KÖVETKEZŐ DAL -->
@@ -248,7 +343,6 @@
     </main>
 
 
-    <!-- FONTOS: type="module" -->
 
     <script
         type="module"
